@@ -1,0 +1,65 @@
+<!-- ============================================ -->
+<!-- CONTACT.HTML - Page Contact -->
+<!-- ============================================ -->
+
+<!-- Save this as contact.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Demander un devis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Traduction & Rédaction</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="traduction.html">Traduction</a></li>
+                <li><a href="redaction.html">Rédaction SEO</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact</h1>
+            <p class="subtitle">Parlons de votre projet</p>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-intro">
+                <p>Vous avez besoin d'une traduction de texte ou de contenu spécifique ? Pour toute demande d'informations relative à mes tarifs, devis ou toute forme de collaboration professionnelle, vous pouvez prendre contact dès maintenant par le biais du formulaire ci-dessous :</p>
+            </div>
+            
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Nom *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Service souhaité *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Sélectionnez un service</option>
+                        <option value="traduction">Traduction</option>
+                        <option value="redaction">Rédaction SEO</option>
+                        <option value="post-edition">Post-édition</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
